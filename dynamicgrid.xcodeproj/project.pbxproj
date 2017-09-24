@@ -14,6 +14,7 @@
 		6CA14A4E1F78150C00822735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA14A4C1F78150C00822735 /* LaunchScreen.storyboard */; };
 		6CA14A591F78150C00822735 /* dynamicgridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA14A581F78150C00822735 /* dynamicgridTests.swift */; };
 		6CA14A641F78150C00822735 /* dynamicgridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA14A631F78150C00822735 /* dynamicgridUITests.swift */; };
+		6CA14A721F78152C00822735 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA14A711F78152C00822735 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6CA14A5F1F78150C00822735 /* dynamicgridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dynamicgridUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA14A631F78150C00822735 /* dynamicgridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dynamicgridUITests.swift; sourceTree = "<group>"; };
 		6CA14A651F78150C00822735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA14A711F78152C00822735 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +99,12 @@
 		6CA14A421F78150C00822735 /* dynamicgrid */ = {
 			isa = PBXGroup;
 			children = (
-				6CA14A431F78150C00822735 /* AppDelegate.swift */,
-				6CA14A451F78150C00822735 /* ViewController.swift */,
-				6CA14A471F78150C00822735 /* Main.storyboard */,
+				6CA14A771F7815AE00822735 /* utils */,
+				6CA14A761F7815A400822735 /* controllers */,
+				6CA14A751F78159600822735 /* presenters */,
+				6CA14A741F78158F00822735 /* view */,
+				6CA14A731F78158300822735 /* models */,
 				6CA14A4A1F78150C00822735 /* Assets.xcassets */,
-				6CA14A4C1F78150C00822735 /* LaunchScreen.storyboard */,
 				6CA14A4F1F78150C00822735 /* Info.plist */,
 			);
 			path = dynamicgrid;
@@ -123,6 +126,46 @@
 				6CA14A651F78150C00822735 /* Info.plist */,
 			);
 			path = dynamicgridUITests;
+			sourceTree = "<group>";
+		};
+		6CA14A731F78158300822735 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				6CA14A711F78152C00822735 /* DataModel.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		6CA14A741F78158F00822735 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6CA14A4C1F78150C00822735 /* LaunchScreen.storyboard */,
+				6CA14A471F78150C00822735 /* Main.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		6CA14A751F78159600822735 /* presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = presenters;
+			sourceTree = "<group>";
+		};
+		6CA14A761F7815A400822735 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CA14A451F78150C00822735 /* ViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		6CA14A771F7815AE00822735 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				6CA14A431F78150C00822735 /* AppDelegate.swift */,
+			);
+			name = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +304,7 @@
 			files = (
 				6CA14A461F78150C00822735 /* ViewController.swift in Sources */,
 				6CA14A441F78150C00822735 /* AppDelegate.swift in Sources */,
+				6CA14A721F78152C00822735 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
